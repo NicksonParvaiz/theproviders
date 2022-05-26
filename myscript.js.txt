@@ -1,0 +1,32 @@
+// Navbar Hide
+
+function hidesidebat(){
+    if (window.innerWidth < 768){
+        document.getElementById("sidenavbar").style.width = "0px"
+        document.getElementById("innersidebar").style.display = "none"
+    }
+    else{
+        document.getElementById("sidenavbar").style.width = "250px"
+        document.getElementById("innersidebar").style.display = "block"
+
+    }
+}
+
+
+//For scroll to top//
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+
+if (document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";}
+    
+else {
+    document.getElementById("myBtn").style.display = "none";
+    }}
+    
+function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
